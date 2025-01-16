@@ -12,4 +12,7 @@ Her er eksempel på markdown.
 2. to punkt
 
 # Bilde:
-![Alt text](https://t3.ftcdn.net/jpg/02/74/06/48/360_F_274064877_Tuq84kGOn5nhyIJeUFTUSvXaSeedAOTT.jpg "En hund")
+![Bilde av en valp](https://t3.ftcdn.net/jpg/02/74/06/48/360_F_274064877_Tuq84kGOn5nhyIJeUFTUSvXaSeedAOTT.jpg "En hund")
+
+# Video
+<video src="path/to/eksempel video.mp4" width="320" height="240" controls></video>
