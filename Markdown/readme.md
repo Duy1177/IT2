@@ -16,3 +16,9 @@ Her er eksempel på markdown.
 
 # Video (Filstørrelsen kan ikke være større enn 10mb)
 ![Video-preview](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWZobTFtZ20yZDA2N2d5aXp0Z2c1cHd6eTV6eTRnYjZnNHloeTJiNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif)
+
+## tabell
+Tabeller blir skrivet med "|"
+|Navn|Adresse|Alder|
+|----|-------|-----|
+|Duy|Bergen|18|
