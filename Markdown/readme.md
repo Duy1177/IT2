@@ -15,4 +15,4 @@ Her er eksempel på markdown.
 ![Bilde av en valp](https://t3.ftcdn.net/jpg/02/74/06/48/360_F_274064877_Tuq84kGOn5nhyIJeUFTUSvXaSeedAOTT.jpg "En hund")
 
 # Video
-![Video-preview](Markdown/test.webp)
+![Video-preview](C:\Github\IT2\Markdown\test.webp)
