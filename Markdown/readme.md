@@ -2,12 +2,12 @@
 
 Her er eksempel på markdown.
 
-# Lister
-## punktliste
+## Lister
+### punktliste
 - Et punkt
 - To punkt
 
-## nummerert liste 
+### nummerert liste 
 1. et punkt
 2. to punkt
 
