@@ -53,8 +53,29 @@ with open(filnavn, "r", encoding="utf-8") as fil:
     
 # print(data)
     
-def bilmerker():
-    for obj in data:
-        print(obj)
-        
-bilmerker()
+# print("\nBilmerker: ")
+# for obj in data.keys():
+#     print(obj)
+    
+# #B 
+# print("Utvalgt Ford")
+# for k,v in data["Ford"][1].items():
+#     print(k,": ", v)
+    
+#C 
+for n,v in data.items():
+    print(n)
+    for k in v:
+        for n2,v2 in k.items():
+            print(f"{n2}: {v2}")
+    print()        
+
+def farge(farge:str)->None:
+    for n,v in data.items(): # merker
+        for e in v:         # liste med modeller
+            if e['farge'].lower()==farge.lower():
+                print('\n' + n)
+                for n2,v2 in e.items(): 
+                    print(f'  {n2:6}: {v2}')
+                
+farge("Rød")
