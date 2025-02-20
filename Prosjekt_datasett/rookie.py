@@ -71,19 +71,30 @@ Avg_bigs = sum(PPG_Bigs)/len(PPG_Bigs)
 labels = ["PPG 6'4 and under", "PPG 6'5-6'9", "PPG 6'10 and taller"]
 values = [Avg_small, Avg_taller, Avg_bigs]
 
-# Plotter
-plt.bar(labels, values)
-plt.title("Average PPG for height")
-plt.xlabel("Height")
-plt.ylabel("PPG")
-plt.show()
+# Plotter grafen
+# plt.bar(labels, values)
+# plt.title("Average PPG for height")
+# plt.xlabel("Height")
+# plt.ylabel("PPG")
+# plt.show()
 
 # # Sorter etter poeng per kamp (PTS.1) i synkende rekkefølge
-# top_scorer = merged_df.sort_values(by="PTS.1", ascending=False).iloc[1]
+top_scorer = merged_df.sort_values(by="PTS.1", ascending=False).iloc[0]
+print("Spilleren med høyest PPG er:", top_scorer["Player"], "med", top_scorer["PTS.1"], "poeng per kamp.", "Han er ", top_scorer["HEIGHT W/O SHOES"], "ft høy")
 
-# print("Spilleren med høyest PPG er:", top_scorer["Player"], "med", top_scorer["PTS.1"], "poeng per kamp.")
+bottom_scorer = merged_df.sort_values(by="PTS.1", ascending=True).iloc[0]
+print("Spilleren med lavest PPG er:", bottom_scorer["Player"], "med", bottom_scorer["PTS.1"], "poeng per kamp. Han er ", bottom_scorer["HEIGHT W/O SHOES"], "ft høy")
 
+#funksjon for å få top scorer i de forskjellige høyde gruppene
+def get_top_player(group, group_name):
+    if merged_df["Player"].isin(group).any():  #any() sjekker om minst et element er i listen, returnerer false hvis ikke
+        top_player = merged_df[merged_df["Player"].isin(group)].sort_values(by="PTS.1", ascending=False).iloc[0]
+        print(f"Spilleren med høyest PPG blant {group_name} er: {top_player['Player']} med {top_player['PTS.1']} poeng per kamp. Han er {top_player['HEIGHT W/O SHOES']} ft høy.")
 
+# Kall funksjonen for hver gruppe
+get_top_player(ShorterPlayers, "de kortere spillerne")
+get_top_player(TallerPlayers, "de høyere spillerne")
+get_top_player(Bigs, "Bigs")
 
 #Kilder https://www.basketball-reference.com/leagues/NBA_2025_rookies.html 
 #https://www.nba.com/stats/draft/combine-anthro?sort=HEIGHT_WO_SHOES&dir=1&SeasonYear=2024
