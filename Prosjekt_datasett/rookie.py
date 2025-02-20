@@ -71,6 +71,7 @@ Avg_bigs = sum(PPG_Bigs)/len(PPG_Bigs)
 labels = ["PPG 6'4 and under", "PPG 6'5-6'9", "PPG 6'10 and taller"]
 values = [Avg_small, Avg_taller, Avg_bigs]
 
+# Plotter
 plt.bar(labels, values)
 plt.title("Average PPG for height")
 plt.xlabel("Height")
