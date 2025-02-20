@@ -20,4 +20,6 @@ Disse datasettene ble kombinert ved å matche spillerens navn i begge tabellene.
 For å kjøre koden, må følgende Python-biblioteker være installert:
 
 ```bash
-pip install pandas matplotlib
+pip install pandas 
+
+pip install matplotlib
