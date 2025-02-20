@@ -7,6 +7,7 @@ For å undersøke om størrelse og skåring har en sammenheng føles det naturli
 
 ## Ressurser
 Ressursene som ble brukt er bibliotekene pandas og matploylib.pyplot
+
 All statistikk ble hentet fra kildene: 
 https://www.basketball-reference.com/leagues/NBA_2025_rookies.html 
 https://www.nba.com/stats/draft/combine-anthro?sort=HEIGHT_WO_SHOES&dir=1&SeasonYear=2024
