@@ -72,11 +72,11 @@ labels = ["PPG 6'4 and under", "PPG 6'5-6'9", "PPG 6'10 and taller"]
 values = [Avg_small, Avg_taller, Avg_bigs]
 
 # Plotter grafen
-# plt.bar(labels, values)
-# plt.title("Average PPG for height")
-# plt.xlabel("Height")
-# plt.ylabel("PPG")
-# plt.show()
+plt.bar(labels, values)
+plt.title("Average PPG for height")
+plt.xlabel("Height")
+plt.ylabel("PPG")
+plt.show()
 
 # # Sorter etter poeng per kamp (PTS.1) i synkende rekkefølge
 top_scorer = merged_df.sort_values(by="PTS.1", ascending=False).iloc[0]
