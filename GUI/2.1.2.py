@@ -13,7 +13,7 @@ def convert():
         flytid = km/fart_KMt
         tid = datetime.timedelta(hours=flytid)
         tid = str(tid).split(":")
-        melding = f"Timer: {tid[0]}, Minutter: {tid[1]}, Sekunder: {tid[2]:.2}"
+        melding = f"Time\r: {tid[0]}, Minutter: {tid[1]}, Sekunder: {tid[2]:.2}"
         resultat.config(text=melding)
     
 root = tk.Tk()
