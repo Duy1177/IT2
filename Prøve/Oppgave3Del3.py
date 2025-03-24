@@ -10,17 +10,21 @@ operativeSystem.tolist()
 
 Windows = 0
 Macintosh = 0
+
 for device in operativeSystem:
     if "Windows" in device:
         Windows += 1
-
-print(Windows)
-
-for device in operativeSystem:
     if "Macintosh" in device:
         Macintosh += 1
+
+print(Windows)
 print(Macintosh)
 
-# eksempel = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.0);"
-# if "Windows" in eksempel:
-#     print(1)
+devices = ["Windows", "Macintosh"]
+attacked = [Windows, Macintosh]
+
+plt.bar(devices, attacked, color=["darkblue", "red"])
+plt.xlabel("Device")
+plt.ylabel("Attacks")
+plt.title("Attacks per device")
+plt.show()
