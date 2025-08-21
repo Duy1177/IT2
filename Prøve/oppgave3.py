@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("sikkerhet-full.csv", delimiter=";", skipinitialspace=True)
+df = pd.read_csv("sikkerhet-full.csv", delimiter=";", skipinitialspace=True, encoding="utf-8")
 # print(df.head())
 
 
@@ -8,6 +8,6 @@ protokoler = df["Protocol"].value_counts() #Teller hvor mange unike verdier det 
 
 protocols = protokoler.index.tolist() #Gjør protokolene om til en liste
 for protocol in protocols:
-    print(f"{protocol} er brukt {protokoler.get(protocol,0)} ganger") #Finner antallet som hører til protocol og printer den ut
-    
+    print(f"{protocol} er brukt {protokoler.get(protocol, 0)} ganger") #Finner antallet som hører til protocol og printer den ut
 
+    

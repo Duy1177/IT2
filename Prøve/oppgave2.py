@@ -1,17 +1,17 @@
 import tkinter as tk
 
-temp = 0
+temp = 20
 
 def opp(): #Endrer global variabel opp
     global temp  
     temp += 0.5  
-    melding = f"Temperatur:\n {temp}"
+    melding = f"Temperatur:\n {temp}°C"
     temperatur.configure(text=melding)  
     
 def ned(): #Endrer global variabel ned
     global temp  
     temp -= 0.5  
-    melding = f"Temperatur:\n {temp}"
+    melding = f"Temperatur:\n {temp}°C"
     temperatur.configure(text=melding)
     
 def sett(): #Printer ut temp i label
@@ -24,7 +24,7 @@ root = tk.Tk()
 AvPå = tk.Button(root, text="Av/På") #Lager knapp
 AvPå.grid(row=0, column=0, rowspan=5, sticky="NS", padx=5, pady=5)
 
-temperatur = tk.Label(root, text=f"Temperatur:\n {temp}", width=10, height=5,  relief="solid", font=("Arial",18)) #Temperatur label
+temperatur = tk.Label(root, text=f"Temperatur:\n {temp}°C", width=10, height=5,  relief="solid", font=("Arial",18)) #Temperatur label
 temperatur.grid(row=1, column=1, padx=8, pady=8)
 
 tempOpp = tk.Button(root, text="↑", command=opp, width=5) #Knapp for temperatur opp, og bruker funksjonen opp
